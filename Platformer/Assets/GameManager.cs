@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     // make singleton
     public static GameManager Instance;
-    public int Score = 0;
-    public int HighScore = 0;
-    public int Lives = 3;
-    public bool IsGameOver = false;
-    public bool IsGamePaused = false;
-    public bool IsGameStarted = false;
+    [FormerlySerializedAs("Score")] public int score = 0;
+    public int highScore = 0;
+    public int lives = 3;
+    public bool isGameOver = false;
+    public bool isGamePaused = false;
+    public bool isGoalReached = false;
     
     
     void Start()

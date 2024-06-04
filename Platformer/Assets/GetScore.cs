@@ -14,7 +14,7 @@ public class GetScore : MonoBehaviour
     void Update()
     {
         //set text to score
-        GetComponent<TMPro.TextMeshProUGUI>().text = "Score: " + GameManager.Instance.Score;
+        GetComponent<TMPro.TextMeshProUGUI>().text = "Score: " + GameManager.Instance.score;
         
     }
 }

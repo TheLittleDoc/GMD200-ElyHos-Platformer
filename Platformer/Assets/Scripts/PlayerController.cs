@@ -83,12 +83,12 @@ public class PlayerController : MonoBehaviour
         {
             isOnGround = false;
             //anim.Play("Jump");
-            Debug.Log("Not On Ground");
+            //Debug.Log("Not On Ground");
         }
         else
         {
             isOnGround = true;
-            Debug.Log("On Ground");
+            //Debug.Log("On Ground");
             //anim.Play("Idle");
         }
     }

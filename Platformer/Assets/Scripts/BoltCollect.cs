@@ -21,7 +21,7 @@ public class BoltCollect : MonoBehaviour
         {
             Debug.Log("Bolt Collected");
             //access singleton
-            GameManager.Instance.Score += 1;
+            GameManager.Instance.score += 1;
             Destroy(collision.gameObject);
         }
     }
