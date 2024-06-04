@@ -17,9 +17,11 @@ public class BoltCollect : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bolt"))
+        if (collision.gameObject.CompareTag("Nut"))
         {
-            boltCount++;
+            Debug.Log("Bolt Collected");
+            //access singleton
+            GameManager.Instance.Score += 1;
             Destroy(collision.gameObject);
         }
     }
